@@ -1,0 +1,20 @@
+
+# UVA 11235 - Frequent Values Solution
+
+* [Problem link](https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=2176)
+* [More datasets](https://www.udebug.com/UVa/11235)
+
+## Solution
+
+* Maintain a count array which stores counts of repeating values c[N]
+* Maintain a `starting` array which stores starting index of each value s[N]
+* Build segment tree on count array
+* For every query (i, j), there are 2 possibilities
+	* If A[i] == A[j], then simply return j - i + 1 [Length of query range as count]
+	* Else, A[i] may repeat till some index k, then k to s[j] from which A[j] will start and go on till j
+		* Count = Max(itemICount, segmentTree.Rmq(k, s[j]-1),itemJCount)
+
+**Space Complexity:** O(N) (for c[N]) + O(N) (for s[N]) + O(5N) (for segmentTree(2^ceil(log2(2N)))) ~ O(7N)
+**Query Complexity:** O(logN)
+
+

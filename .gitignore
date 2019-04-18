@@ -1,0 +1,6 @@
+.DS_Store
+**/*.txt
+**/*.out
+**/testcases
+**/testcases/log
+**/testcases/*.txt
