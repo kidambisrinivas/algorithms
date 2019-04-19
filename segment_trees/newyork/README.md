@@ -41,7 +41,7 @@
 ### Run Complexity 
 
 * **AddBuilding Complexity:** O(log 4N) per insert into segment tree
-	* There are 2N buidling ends. Hence 4N-1 segment tree nodes. So insert takes log 4N4
+	* There are 2N buidling ends. Hence 4N-1 segment tree nodes. So insert takes log 4N
 * **Total Complexity:** (4N) * O(log 4N)
 	* To add N buildings to Segment Tree and compute overlap cost
 
