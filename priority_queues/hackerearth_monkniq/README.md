@@ -12,7 +12,19 @@
 	* Add student and lastIQ
 	* Push back to Priority Queue
 
-**Space Complexity:** 4 integers for storing a Course ~ O(4C)
-**Query Complexity:** O(PlogC) [P - Monk and his friends, C - Number of courses]
+## Complexity
+
+* P - Monk and his friends
+* C - Number of courses
+
+### Space Complexity
+
+* **Space Complexity:** O(4C)
+	* 1 Course requires 4 integers
+
+### Run Complexity
+
+* **Query Complexity:** O(2P * logC)
+	- 2 operations per person in Monk and his friends group [1 pop and 1 insert]
 
 

@@ -19,8 +19,18 @@
 
 In this enemy relationships are also modelled as friendship relationships and we can use a single UFDS set to solve this problem
 
-**Space Complexity:** O(2N)
-**Union Time Complexity:** O(1)
-**Find Time Complexity for M queries:** O(M * Ackermans(N)) ~ O(M * 4) [Amortized O(1) per find query]
+## Complexity
+
+* N - Number of citizens
+
+### Space Complexity
+
+* **Space Complexity:** O(2N)
+
+### Run Complexity
+
+* **Union Time Complexity:** O(1)
+* **Find Time Complexity for M queries:** O(M * Ackermans(N))
+	* O(M * 4) Amortized O(1) per find query
 
 

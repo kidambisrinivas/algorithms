@@ -18,8 +18,17 @@
 	* else, set diff to 0
 	* Update the sum-value of all nodes with range [L, R] in segment tree where `L <= i <= R` with +diff
 
-**Space Complexity:** O(5N) (~ for segmentTree(2^ceil(log2(2N))))
-**Query Complexity:** O(logN) per query [N - Number of items in array]
+## Complexity
+
+* N - Number of numbers in array
+
+### Space Complexity
+
+* **Space Complexity:** O(5N) (~ for segmentTree(2^ceil(log2(2N))))
+
+### Run Complexity
+
+* **Query Complexity:** O(logN) per query
 
 ## Testcases
 

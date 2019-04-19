@@ -15,8 +15,17 @@
 * For every update applied to range [i, j] `(both i and j included)`
 	* Update the sum-value of all nodes with range [L, R] in segment tree where the segment tree node range falls completely inside [i, j] `i <= (L, R) <= j`
 
+## Complexity
+
+* N - Number of numbers in array
+
+### Space Complexity
+
 **Space Complexity:** O(5N) (~ for segmentTree(2^ceil(log2(2N))))
-**Query Complexity:** O(logN) per query [N - Number of items in array]
+
+### Run Complexity 
+
+* **Query Complexity:** O(logN) per query
 
 ## Testcases
 

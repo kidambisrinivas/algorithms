@@ -29,12 +29,21 @@
 		* Else, Dont do anything
 	* Sum all overlapCosts and print solution
 
+## Complexity
 
-**Numer of buildings:** N
-**Numer of endpoints:** 2N
-**Space Complexity:** O(10N) (~ for segmentTree(2^ceil(log2(4N)))) + O(2N) for priority queue = O(12N)
-**AddBuilding Complexity:** O(log 4N) per query
-**Total Complexity:** (4N) * O(log 4N) [To add N buildings to Segment Tree and compute overlap cost]
+* N - Number of buildings
+* 2N - Number of ends of buildings (each building has 2 ends - left and right)
+
+### Space Complexity
+
+* **Space Complexity:** O(10N) (~ for segmentTree(2^ceil(log2(4N)))) + O(2N) for priority queue = O(12N)
+
+### Run Complexity 
+
+* **AddBuilding Complexity:** O(log 4N) per insert into segment tree
+	* There are 2N buidling ends. Hence 4N-1 segment tree nodes. So insert takes log 4N4
+* **Total Complexity:** (4N) * O(log 4N)
+	* To add N buildings to Segment Tree and compute overlap cost
 
 ## Testcases
 

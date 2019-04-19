@@ -6,6 +6,9 @@
 
 ## Solution
 
+* Weighted Lowest Common Ancestor / Range Minimum Query
+* Input: Tree with edge weights
+* Output: LCA of 2 nodes in tree and shortest distance b/w 2 nodes
 * **Key Idea:** Since each ant hill is connected is only one of previous ant hills, ant hill network is a tree
 
 * Build an Euler Tour Representation of ant hills [E[], L[], H[]]
@@ -13,14 +16,15 @@
 * Shortest path between 2 ant hills is computed as Dist(A, LCA(A, B)) + Dist(B, LCA(A, B))
 * To efficiently compute Distance between a node A and its LCA(A, B) with B, store distance of every node from root of anthills tree
 
-## Space complexity
+## Complexity
 
-* Weighted Lowest Common Ancestor / Range Minimum Query
-* Input: Tree with edge weights
-* Output: LCA of 2 nodes in tree and shortest distance b/w 2 nodes
-* Space complexity: O(3 * (2N-1)) + O(3 * N) + O(2 * (2N-1)-1) = O(6N-3 + 3N + 4N-3) = O(13N - 6)
+* N - Number of ant hills
 
-## Run complexity
+### Space Complexity
+
+* **Space complexity:** O(3 * (2N-1)) + O(3 * N) + O(2 * (2N-1)-1) = O(6N-3 + 3N + 4N-3) = O(13N - 6)
+
+### Run complexity
 
 * Build: EulerTour: O(2N-1), SegmentTreeBuild: O(4N-2)
 * LCA Query: O(log(2N-1))

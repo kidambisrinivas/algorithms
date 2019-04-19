@@ -28,9 +28,19 @@
 	* Cache the results in a sum[] array for kth op
 * We can only perform kth op after 0 .. k-1 ops. So if new input k is less than max k seen till now, just read the sum from cached sum[] array
 
-**Space Complexity:** O(3 * 5N) (~ for segmentTree(2^ceil(log2(2N))) contains sum, min_index and max_index)
-**1 op Complexity:** 5 * O(logN) per op [N - Number of items in array, 2 reads, 2 deletes, 1 insert per op]
-**K ops Complexity:** 5K * O(logN)
+## Complexity
+
+* N - Number of numbers in array
+
+### Space Complexity
+
+* **Space Complexity:** O(3 * 5N) (~ for segmentTree(2^ceil(log2(2N))) contains sum, min_index and max_index)
+
+### Run Complexity
+
+* **1 op Complexity:** 5 * O(logN) per op
+	* 2 reads, 2 deletes, 1 insert per op -> So 5 ops in total
+* **K ops Complexity:** 5K * O(logN)
 
 ## Testcases
 

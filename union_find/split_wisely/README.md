@@ -20,9 +20,20 @@
 
 **Note:** We've a O(N^2) loop in the solution, but we skip if a parent set has already been processed. So in effect, each person is only checked once and each person's set is only processed once.
 
-**Space Complexity:** O(3N) [p[N], r[N], owe[N]]
-**Query Complexity (for M queries):** O(M * Ackermans(N)) [~ O(M * 4) for M queries ~~ O(1) amortized time per find query]
-**Total time per set:** O(N * Ackermans(N)) ~~ O(N * 4) [To find root of every person and check if that root's set has sum of owe[] as 0]
+## Complexity
+
+* N - Number of persons
+
+### Space Complexity
+
+* **Space Complexity:** O(3N) [p[N], r[N], owe[N]]
+
+### Run Complexity
+
+* **Query Complexity (for M queries):** O(M * Ackermans(N))
+	* O(M * 4) for M queries ~~ O(1) amortized time per find query
+* **Total time per set:** O(N * Ackermans(N))
+	* O(N * 4) To find root of every person and check if that root's set has sum of owe[] as 0
 
 ## Testcases
 

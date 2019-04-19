@@ -25,10 +25,18 @@
 		* Else If current letter has siblings or is an EndOfWord, we need user to type a keystroke (so count++)
 		* Else, automcomplet would automatically prompt the only letter at this stage 
 
-**Max word length:** L
-**Number of words:** N
-**Space Complexity:** O(ALPHABET_SIZE * L * N)
-**Insert/Search/CountKeyStrokes Complexity:** O(L) per query
+## Complexity
+
+* **Max word length:** L
+* **Number of words:** N
+
+### Space Complexity
+
+* **Space Complexity:** O(ALPHABET_SIZE * L * N)
+
+### Run Complexity
+
+* **Insert/Search/CountKeyStrokes Complexity:** O(L) per query
 
 ## Testcases
 

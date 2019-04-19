@@ -20,8 +20,18 @@
 	* Update its nexttick 
 	* Push back to Priority Queue
 
-**Space Complexity:** 3 integers for storing a Query ~ O(3N)
-**Query Complexity:** O(KlogN) [K - Top K queries to be executed, N - Number of queries registered]
+## Complexity
+
+* N - Number of registered queries
+* K - Top K queries to be executed
+
+### Space Complexity
+
+* **Space Complexity:** 3 integers for storing a Query ~ O(3N)
+
+### Run Complexity
+
+* **Query Complexity:** O(K * logN)
 
 ## Testcases
 

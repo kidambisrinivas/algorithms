@@ -14,7 +14,19 @@
 	* Else, A[i] may repeat till some index k, then k to s[j] from which A[j] will start and go on till j
 		* Count = Max(itemICount, segmentTree.Rmq(k, s[j]-1),itemJCount)
 
-**Space Complexity:** O(N) (for c[N]) + O(N) (for s[N]) + O(5N) (for segmentTree(2^ceil(log2(2N)))) ~ O(7N)
-**Query Complexity:** O(logN)
+## Complexity
+
+* N - Number of numbers in array
+
+### Space Complexity
+
+* **Space Complexity:** O(7N)
+	* c[N] : O(N)
+	* s[N] : O(N)
+	* segmentTree : O(5N) [2^ceil(log2(2N))]
+
+### Run Complexity
+
+* **Query Complexity:** O(logN)
 
 

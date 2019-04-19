@@ -22,10 +22,18 @@
 	* Else if found, find the first whole number 0,1,..9,10,11,..21,..., which is present in trie
 * To convert the number to string, use the optimized number conversion function [Otherwise you might get a TLE]
 
-**Max string length of user_id:** L
-**Number of users:** N 
-**Space Complexity:** O(ALPHABET_SIZE * L * N)
-**Insert and search complexity:** O(L)
+## Complexity
+
+* **Max string length of user_id:** L [Including user_id number]
+* **Number of users:** N
+
+### Space Complexity
+
+* **Space Complexity:** O(ALPHABET_SIZE * L * N)
+
+### Run Complexity 
+
+* **Insert and search complexity:** O(L)
 
 ## Testcases
 
