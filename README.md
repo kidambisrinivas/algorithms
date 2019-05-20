@@ -17,6 +17,10 @@ It is structured by data structures and algorithms at the top level, then a cano
 
 ## Algorithms
 
+### [Greedy](greedy)
+
+* [Prim's MST](greedy/thanos_infinity_stones)
+
 ### Recursion
 
 * Divide and Conquer
